@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MagazinOnline.Modele.Categorie>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<div class="row" style="position:relative;top:300px">
+    <h1 class="text-center" style="color:black"><b>Alege categoria dorita</b></h1>
+</div>
+<div class="row" style="position:relative;top:300px">
+    @foreach (var categorie in Model)
+    {
+        <div class="col-12 col-lg-4 ">
+            <br>
+            <div class="col-12 d-flex justify-content-center">
+                @if (categorie.Nume == "Calculator")
+                {
+                    <i class="fas fa-desktop" style="color:black; font-size: 15rem;"></i>
+                }
+                @if (categorie.Nume == "Placi Video")
+                {
+                    <i class="fas fa-gamepad" style="color:black; font-size: 15rem;"></i>
+                }
+                @if (categorie.Nume == "Telefon")
+                {
+                    <i class="fas fa-mobile-alt" style="color:black; font-size: 15rem;"></i>
+                }
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <a class="nav-link" asp-area="" asp-controller="Meniu" asp-action="Calculator">
+                    <h1 style="color:black"><b>@categorie.Nume</b></h1>
+                </a>
+            </div>
+        </div>
+    }
+</div>
+<br />
+<div class="row d-flex justify-content-center " style="position:relative;top:300px">
+    <div class="col-6 col-lg-3 ">
+        <a class="btn btn-primary text-white" style="width:100%" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </div>
+    <div class="col-6 col-lg-3">
+        <a class="btn btn-primary text-white" style="width:100%" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </div>
+</div>
+

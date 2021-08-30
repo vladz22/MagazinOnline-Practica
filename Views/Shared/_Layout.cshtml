@@ -1,0 +1,143 @@
+﻿@using MagazinOnline.Utilitate
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccesor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MagazinOnline</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    <link rel="stylesheet" href="~/fontawesome-5.15.3/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-12 col-lg-5">
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/imagini/logo/logo2.png" style="width:20%" />
+            </a>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-dark bg-dark border-bottom box-shadow">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-lg-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light">
+                                Magazin Online
+                                <i class="fas fa-store-alt"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Index">
+                                Home
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Meniu" asp-action="Calculator">
+                                Calculatoare
+                                <i class="fas fa-desktop"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Meniu" asp-action="PlacaVideo">
+                                Placi Video
+                                <i class="fas fa-gamepad"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Meniu" asp-action="Telefon">
+                                Telefoane
+                                <i class="fas fa-mobile-alt"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Meniu" asp-action="Privacy">
+                                Privacy
+                                <i class="fas fa-user-secret"></i>
+                            </a>
+                        </li>
+                        @if (User.IsInRole(StaticDetalii.Rol_Admin) || User.IsInRole(StaticDetalii.Rol_Angajat))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle bg-dark text-primary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Admin Management
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item bg-dark text-primary" asp-area="Admin" asp-controller="Categorie" asp-action="Index">
+                                        Categorie
+                                        <i class="fas fa-clipboard"></i>
+                                    </a>
+                                    <a class="dropdown-item bg-dark text-primary" asp-area="Admin" asp-controller="Produs" asp-action="Index">
+                                        Produs
+                                        <i class="fas fa-briefcase"></i>
+                                    </a>
+                                    <a class="dropdown-item bg-dark text-primary" asp-area="Admin" asp-controller="Companie" asp-action="Index">
+                                        Companie
+                                        <i class="fas fa-building"></i>
+                                    </a>
+                                    <a class="dropdown-item bg-dark text-primary" asp-area="Admin" asp-controller="User" asp-action="Index">
+                                        User
+                                        <i class="fas fa-user"></i>
+                                    </a>
+                                    <a class="dropdown-item bg-dark text-primary" asp-area="Admin" asp-controller="Order" asp-action="Index">
+                                        Lista Comenzi
+                                        <i class="fas fa-clipboard-list"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                    @if (HttpContextAccesor.HttpContext.Session.GetInt32(StaticDetalii.ssShoppingCart) != null)
+                    {
+                        <a asp-area="Client" asp-controller="Cart" asp-action="Index" class="nav-link text-light">
+                            @{
+                                var count = HttpContextAccesor.HttpContext.Session.GetInt32(StaticDetalii.ssShoppingCart);
+                            }
+                            <i class="fas fa-shopping-cart"></i>(@count)
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="#" class="nav-link text-light">
+
+                            <i class="fas fa-shopping-cart"></i>(0)
+                        </a>
+                    }
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer bg-dark text-primary">
+        <div class="container">
+            &copy; 2021 - MagazinOnline - <a class="text-primary" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/e19c476714.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

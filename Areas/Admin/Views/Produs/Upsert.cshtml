@@ -1,0 +1,133 @@
+﻿@model MagazinOnline.Modele.ViewModels.ProdusVM
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titlu = "Creaza Produs";
+}
+<form method="post" enctype="multipart/form-data">
+    @*pentru upload*@
+    <div class="row p-3 border bg-light">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (Model.Produs.Id != 0)
+        {
+            //pentru edit
+            titlu = "Editeaza Produs";
+            <input type="hidden" asp-for="Produs.Id" />
+        }
+        <div class="col-12 border-bottom">
+            <h2 class="text-dark">@titlu</h2>
+        </div>
+        <div class="col-8 pt-4">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Produs.Nume"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Produs.Nume" class="form-control" />
+                    <span asp-validation-for="Produs.Nume" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Produs.Cod"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Produs.Cod" class="form-control" />
+                    <span asp-validation-for="Produs.Cod" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label  class="text-dark" asp-for="Produs.Descriere"></label>
+                </div>
+                <div class="col-8">
+                    <textarea asp-for="Produs.Descriere" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Produs.Pret"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Produs.Pret" class="form-control" />
+                    <span asp-validation-for="Produs.Pret" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Produs.Pret5"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Produs.Pret5" class="form-control" />
+                    <span asp-validation-for="Produs.Pret5" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4 text-dark">
+                    Categorie
+                </div>
+                <div class="col-8">
+                    @*("care este id-ul ,care este lista in care va fi stocat,default mesaj,daca doresti vreo clasa")*@
+                    @Html.DropDownListFor(a => a.Produs.CategorieId, Model.CategorieLista, "Selecteaza categoria", new { @class = "form-control" })
+                    <span asp-validation-for="Produs.CategorieId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4 text-dark">
+                    Imagine
+                </div>
+                <div class="col-8">
+                    <input type="file" name="files" id="uploadBox" multiple class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    @if (Model.Produs.Id != 0)
+                    {
+                        <partial name="EditAndBack_PartialView" model="Model.Produs.Id" />
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" onclick="return validateInput()" class="btn btn-primary text-light form-control">Create</button>
+                                @*onclick="return validateInput()"->dam trigger la javascript pentru a ne asigura
+                                    ca mereu ce selecteaza un Produs,uploadeaza si o imagine*@
+                            </div>
+                            <div class="col">
+                                <a asp-action="Index" class="btn btn-secondary form-control">Back to List</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        @if (Model.Produs.Id != 0)
+        {
+            <div class="col-3 offset-1">
+                <img src="@Model.Produs.ImagineUrl" width="100%" style="border-radius:5px;border:1px solid;" />
+            </div>
+        }
+
+    </div>
+</form>
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
+<script src="https://cdn.tiny.cloud/1/oxpqtyt0qmllxfb26iymca89irgklypokk2znltdpfh84j2r/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'lists',
+        menubar: 'file edit format'
+    });
+
+    function validateInput() {
+        if (document.getElementById("uploadBox").value == "") {
+            swal("Error", "Te rog selecteaza o imagine", "error");
+            return false;
+        }
+        return true;
+    }
+</script>

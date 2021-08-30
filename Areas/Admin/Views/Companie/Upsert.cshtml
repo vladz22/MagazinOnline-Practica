@@ -1,0 +1,99 @@
+﻿@model MagazinOnline.Modele.Companie
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titlu = "Creaza Companie";
+}
+<form method="post">
+    <div class="row p-3 border bg-light">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (Model.Id != 0)
+        {
+            //pentru edit
+            titlu = "Editeaza Companie";
+            <input type="hidden" asp-for="Id" />
+        }
+        <div class="col-12 border-bottom">
+            <h2 class="text-dark">@titlu</h2>
+        </div>
+        <div class="col-8 pt-4">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Nume"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Nume" class="form-control" />
+                    <span asp-validation-for="Nume" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Adresa"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Adresa" class="form-control" />
+                    <span asp-validation-for="Adresa" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Oras"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Oras" class="form-control" />
+                    <span asp-validation-for="Oras" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="Tara"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Tara" class="form-control" />
+                    <span asp-validation-for="Tara" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="CodPostal"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="CodPostal" class="form-control" />
+                    <span asp-validation-for="CodPostal" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="NrTelefon"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="NrTelefon" class="form-control" />
+                    <span asp-validation-for="NrTelefon" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label class="text-dark" asp-for="IsAutorizat"></label>
+                </div>
+                <div class="col-8">
+                    <input type="checkbox" asp-for="IsAutorizat" style="width:100%;height:2rem"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    @if (Model.Id != 0)
+                    {
+                        <partial name="EditAndBack_PartialView" model="Model.Id" />
+                    }
+                    else
+                    {
+                        <partial name="CreateAndBack_PartialView" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+} 

@@ -1,0 +1,62 @@
+﻿@model MagazinOnline.Modele.ShoppingCart
+
+
+
+<form method="post">
+    <input type="hidden" asp-for="ProdusId" />
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-12">
+                <h1>@Model.Produs.Nume</h1>
+                <p class="text-primary">Cod:@Model.Produs.Cod</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3 d-flex justify-content-center">
+                <img src="@Model.Produs.ImagineUrl" style="width:70%" class="rounded" />
+            </div>
+            <div class="col-12 col-lg-7 text-danger d-flex justify-content-lg-end justify-content-center">
+                <h1> Pret:@Model.Produs.Pret $ </h1>
+            </div>
+            <div class="col-12">
+                <div class="col-6"><h4>Cantitate</h4></div>
+                <div class="col-lg-1"><input class="form-control" asp-for="Count" /></div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-4">
+                <button type="submit" value="Add to Cart" class="btn btn-primary btn-square btn-lg form-control" style="height:auto;">Adauga in cos</button>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1>Descriere produs</h1>
+            <p>@Html.Raw(Model.Produs.Descriere)</p>
+        </div>
+        @if (Model.Produs.Categorie.Nume == "Calculator")
+        {
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-3">
+                    <a asp-action="Calculator" class="btn btn-secondary form-control  btn-square btn-lg" style="height:auto;">Back to List</a>
+                </div>
+            </div>
+        }
+        @if (Model.Produs.Categorie.Nume == "Placi Video")
+        {
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-3">
+                    <a asp-action="PlacaVideo" class="btn btn-secondary form-control  btn-square btn-lg" style="height:auto;">Back to List</a>
+                </div>
+            </div>
+        }
+        @if (Model.Produs.Categorie.Nume == "Telefon")
+        {
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-3">
+                    <a asp-action="Telefon" class="btn btn-secondary form-control  btn-square btn-lg" style="height:auto;">Back to List</a>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</form>

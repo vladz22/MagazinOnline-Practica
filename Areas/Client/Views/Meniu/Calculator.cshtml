@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MagazinOnline.Modele.Produs>
+
+
+
+
+
+<div class="container">
+    <div class="row bg-light">
+        @foreach (var produs in Model)
+        {
+            @if (produs.Categorie.Nume == "Calculator")
+            {
+                <div class="col-lg-3 col-md-6 col-sm-12" style="border:1px solid #008cba; border-radius:5px;height:auto;">
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <img src="@produs.ImagineUrl" style="width:70%" />
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <h1>
+                            <a asp-action="Details" asp-route-id="@produs.Id" class="btn btn-link text-danger" style="font-size: 1rem; display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; ">@produs.Nume</a>
+                        </h1>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <p>Cod Produs:@produs.Cod</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <a asp-action="Details" asp-route-id="@produs.Id" class="btn btn-link text-danger">Detalii</a>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <p>Pret:@produs.Pret.ToString("0.00") $</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <p>Categorie:@produs.Categorie.Nume</p>
+                    </div>
+                    <div class="col-12  d-flex justify-content-center">
+                        <a class="btn btn-primary text-light" style="height:auto;">Adauga in cos</a>
+                    </div>
+                    <br>
+                </div>
+            }
+        }
+    </div>
+</div>
