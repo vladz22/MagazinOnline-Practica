@@ -1,0 +1,34 @@
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.DataAcces.deps.json
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.DataAcces.dll
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\ref\MagazinOnline.DataAcces.dll
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.DataAcces.pdb
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.csproj.AssemblyReference.cache
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.AssemblyInfoInputs.cache
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.AssemblyInfo.cs
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.csproj.CoreCompileInputs.cache
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.dll
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\ref\MagazinOnline.DataAcces.dll
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.pdb
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Modele.dll
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Utilitate.dll
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Modele.pdb
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Utilitate.pdb
+C:\Users\R3demon\source\repos\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.csproj.CopyComplete
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.DataAcces.deps.json
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.DataAcces.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.DataAcces.pdb
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Modele.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Utilitate.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Modele.pdb
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\bin\Debug\net5.0\MagazinOnline.Utilitate.pdb
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.csproj.AssemblyReference.cache
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.AssemblyInfoInputs.cache
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.AssemblyInfo.cs
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.csproj.CoreCompileInputs.cache
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.csproj.CopyComplete
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\refint\MagazinOnline.DataAcces.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\MagazinOnline.DataAcces.pdb
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.DataAcces\obj\Debug\net5.0\ref\MagazinOnline.DataAcces.dll
