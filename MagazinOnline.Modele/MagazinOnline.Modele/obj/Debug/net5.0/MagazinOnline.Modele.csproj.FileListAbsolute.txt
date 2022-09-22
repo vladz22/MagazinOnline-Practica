@@ -1,0 +1,24 @@
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\bin\Debug\net5.0\MagazinOnline.Modele.deps.json
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\bin\Debug\net5.0\MagazinOnline.Modele.dll
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\bin\Debug\net5.0\ref\MagazinOnline.Modele.dll
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\bin\Debug\net5.0\MagazinOnline.Modele.pdb
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.csproj.AssemblyReference.cache
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.AssemblyInfoInputs.cache
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.AssemblyInfo.cs
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.csproj.CoreCompileInputs.cache
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.dll
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\ref\MagazinOnline.Modele.dll
+C:\Users\R3demon\source\repos\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.pdb
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\bin\Debug\net5.0\MagazinOnline.Modele.deps.json
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\bin\Debug\net5.0\MagazinOnline.Modele.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\bin\Debug\net5.0\MagazinOnline.Modele.pdb
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.csproj.AssemblyReference.cache
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.AssemblyInfoInputs.cache
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.AssemblyInfo.cs
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.csproj.CoreCompileInputs.cache
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\refint\MagazinOnline.Modele.dll
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\MagazinOnline.Modele.pdb
+D:\Proiect Magazin Online-Practica-20220614T233934Z-001\Proiect Magazin Online-Practica\MagazinOnline.Modele\obj\Debug\net5.0\ref\MagazinOnline.Modele.dll
